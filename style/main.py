@@ -18,7 +18,7 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        self.redirect("http://affsuite.xyz/click.php?key=ckq8rrtqeop4vhyrw5sm", True)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
